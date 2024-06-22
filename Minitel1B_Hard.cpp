@@ -335,6 +335,11 @@ void Minitel::clearScreen() {  // Voir p.95
   writeByte(0x4A);
 }
 /*--------------------------------------------------------------------*/
+void Minitel::cls() {
+  newXY(1,0); cancel(); // erase status row 0
+  newScreen(); // erase rows 1 to 24
+}
+/*--------------------------------------------------------------------*/
 
 void Minitel::clearLineFromCursor() {  // Voir p.95
   writeWord(CSI);  // 0x1B 0x5B

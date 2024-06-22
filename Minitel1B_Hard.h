@@ -318,6 +318,7 @@ public:
   void clearScreenFromCursor();  // Effacement depuis le curseur inclus jusqu'à la fin de l'écran.
   void clearScreenToCursor();  // Effacement depuis le début de l'écran jusqu'au curseur inclus.
   void clearScreen();  // Effacement de tout l'écran (la position du curseur n'est pas modifiée).
+  void cls();  // Effacement de tout l'écran (la position du curseur est modifiée).
   void clearLineFromCursor();  // Effacement depuis le curseur inclus jusqu'à la fin de la rangée.
   void clearLineToCursor();  // Effacement depuis le début de la rangée jusqu'au curseur inclus.
   void clearLine();  // Effacement total de la rangée où est le curseur.
